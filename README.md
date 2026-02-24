@@ -17,22 +17,24 @@ Question:2-------------
 
 
 Question:3-------------
- Event bubbling is when an event (like a click) starts at the specific item you touched and then "bubbles up" to its parent elements one by one. Imagine dropping a stone in a pool; the ripple starts at the center and moves outward to the edges. This happens automatically, meaning if you click a button inside a box, the box also feels the click. You can use event.stopPropagation() if you want to stop the ripple from reaching the outer layers.
-
+ Event bubbling is when an event starts at the specific item touche and then bubbles up to its parent elements one by one. Meaning if you click a button inside a box, the box also feels the click. Y
 
 
 
 
  Question:4-------------
- Event Delegation is a JavaScript technique where you add one event listener to a parent element instead of adding listeners to many child elements. It works because events “bubble up” from the child to the parent in the DOM. This makes your code faster and cleaner since you use fewer event listeners. It is especially useful when elements are added dynamically to the page.
+ Event Delegation is a JavaScript technique where you add a single listener to their parent or root element, rather than adding event listeners to each individual element.
+ By creating event listener we consume memory.
 
 
 
 
 
 Question:5-------------
- preventDefault() stops the browser’s default action for an event. For example, it prevents a form from submitting or a link from opening.
+ preventDefault() stops  stops the browser default behavior from happening.. 
 
- stopPropagation() stops the event from moving (bubbling) up or down the DOM tree. This means parent elements will not receive the event.
+ stopPropagation() stops the event from moving up or down the DOM tree.
 
  In short, preventDefault() stops the default behavior, while stopPropagation() stops the event flow.
+
+ 
